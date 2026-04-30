@@ -209,5 +209,8 @@ public class PantallaProduct extends JFrame {
 		txtPrice.setText("");
 		txtStockQuantity.setText("");
 		txtIsAvailable.setText("");
+		PantallaProduct p = new PantallaProduct();
+		p.setVisible(false);
+				
 	}
 }
