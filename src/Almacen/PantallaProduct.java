@@ -82,7 +82,7 @@ public class PantallaProduct extends JFrame {
 			@Override
 			public void keyTyped(KeyEvent e) {
 				if(txtID.getText().length()>=11){
-					//e.consume();
+					e.consume();
 				}
 			}
 		});
@@ -113,7 +113,7 @@ public class PantallaProduct extends JFrame {
 		JButton btnIngresar = new JButton("Ingresar");
 		btnIngresar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				/*try {
+				try {
 					Product a = new Product(Integer.parseInt(txtID.getText()), txtName.getText(),
 							txtPrice.getText(), txtStockQuantity.getText(), txtIsAvailable.getText());
 					if(a.InsertProduct()) {
@@ -125,7 +125,7 @@ public class PantallaProduct extends JFrame {
 				} catch (Exception e2) {
 					// TODO: handle exception
 					JOptionPane.showMessageDialog(null, "ERROR AL AGREGAR");
-				}*/
+				}
 			}
 		});
 		btnIngresar.setBounds(74, 167, 84, 20);
