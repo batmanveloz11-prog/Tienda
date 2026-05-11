@@ -107,6 +107,7 @@ public class PantallaProduct extends JFrame {
 		contentPane.add(txtStockQuantity);
 		
 		txtIsAvailable = new JTextField();
+		txtIsAvailable.setText("Dilan sube video");
 		txtIsAvailable.setColumns(10);
 		txtIsAvailable.setBounds(174, 122, 182, 18);
 		contentPane.add(txtIsAvailable);
@@ -206,15 +207,6 @@ public class PantallaProduct extends JFrame {
 		});
 		btnActualizar.setBounds(214, 208, 84, 20);
 		contentPane.add(btnActualizar);
-		
-		JButton btnBaseDatos = new JButton("Borrar la base de datos");
-		btnBaseDatos.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				setVisible(false);
-			}
-		});
-		btnBaseDatos.setBounds(242, 233, 170, 20);
-		contentPane.add(btnBaseDatos);
 
 	}
 	public void limpiar() {
