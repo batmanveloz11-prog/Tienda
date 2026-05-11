@@ -175,6 +175,7 @@ public class PantallaProduct extends JFrame {
 				}
 			}
 		});
+		//borra la cuenta brayan
 		btnEliminar.setBounds(74, 208, 84, 20);
 		contentPane.add(btnEliminar);
 		
