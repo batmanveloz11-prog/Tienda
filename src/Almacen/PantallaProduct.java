@@ -91,6 +91,7 @@ public class PantallaProduct extends JFrame {
 		txtID.setColumns(10);
 		
 		txtName = new JTextField();
+		txtName.setText("Brayan borra la cuenta");
 		txtName.setColumns(10);
 		txtName.setBounds(174, 53, 182, 18);
 		contentPane.add(txtName);
@@ -111,6 +112,7 @@ public class PantallaProduct extends JFrame {
 		contentPane.add(txtIsAvailable);
 		
 		JButton btnIngresar = new JButton("Ingresar");
+		btnIngresar.setBackground(Color.CYAN);
 		btnIngresar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -132,6 +134,7 @@ public class PantallaProduct extends JFrame {
 		contentPane.add(btnIngresar);
 		
 		JButton btnCargar = new JButton("Cargar");
+		btnCargar.setBackground(Color.YELLOW);
 		btnCargar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -158,6 +161,7 @@ public class PantallaProduct extends JFrame {
 		contentPane.add(btnCargar);
 		
 		JButton btnEliminar = new JButton("Eliminar");
+		btnEliminar.setBackground(Color.RED);
 		btnEliminar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
