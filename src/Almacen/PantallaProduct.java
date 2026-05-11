@@ -134,33 +134,6 @@ public class PantallaProduct extends JFrame {
 		btnIngresar.setBounds(74, 167, 84, 20);
 		contentPane.add(btnIngresar);
 		
-		JButton btnCargar = new JButton("Cargar");
-		btnCargar.setBackground(Color.YELLOW);
-		btnCargar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					int id=Integer.parseInt(JOptionPane.showInputDialog("ID a cargar"));
-					
-					product.setId(id);
-					if(product.CarryProduct()) {
-						txtID.setText("" + product.getId());
-						txtName.setText(product.getName());
-						txtPrice.setText(product.getPrice());
-						txtStockQuantity.setText(product.getStockQuantity());
-						txtIsAvailable.setText(product.getIsAvailable());
-						JOptionPane.showMessageDialog(null, "SE CARGO CORRECTAMENTE");
-					} else {
-						JOptionPane.showMessageDialog(null, "ERROR AL CARGAR");
-					}
-				} catch (Exception e2) {
-					
-					JOptionPane.showMessageDialog(null, "ERROR AL CARGAR");
-				}
-			}
-		});
-		btnCargar.setBounds(214, 167, 84, 20);
-		contentPane.add(btnCargar);
-		
 		JButton btnEliminar = new JButton("Eliminar");
 		btnEliminar.setBackground(Color.RED);
 		btnEliminar.addActionListener(new ActionListener() {
