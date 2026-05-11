@@ -112,28 +112,6 @@ public class PantallaProduct extends JFrame {
 		txtIsAvailable.setBounds(174, 122, 182, 18);
 		contentPane.add(txtIsAvailable);
 		
-		JButton btnIngresar = new JButton("Ingresar");
-		btnIngresar.setBackground(Color.CYAN);
-		btnIngresar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					Product a = new Product(Integer.parseInt(txtID.getText()), txtName.getText(),
-							txtPrice.getText(), txtStockQuantity.getText(), txtIsAvailable.getText());
-					if(a.InsertProduct()) {
-						limpiar();
-						JOptionPane.showMessageDialog(null, "Se agrego correctamente");
-					} else {
-						JOptionPane.showMessageDialog(null, "ERROR AL AGREGAR");
-					}
-				} catch (Exception e2) {
-					// TODO: handle exception
-					JOptionPane.showMessageDialog(null, "ERROR AL AGREGAR");
-				}
-			}
-		});
-		btnIngresar.setBounds(74, 167, 84, 20);
-		contentPane.add(btnIngresar);
-		
 		JButton btnEliminar = new JButton("Eliminar");
 		btnEliminar.setBackground(Color.RED);
 		btnEliminar.addActionListener(new ActionListener() {
