@@ -183,30 +183,6 @@ public class PantallaProduct extends JFrame {
 		//borra la cuenta brayan
 		btnEliminar.setBounds(74, 208, 84, 20);
 		contentPane.add(btnEliminar);
-		
-		JButton btnActualizar = new JButton("Actualizar");
-		btnActualizar.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				try {
-					product.setId(Integer.parseInt(txtID.getText().toString()));
-					product.setName(txtName.getText());
-					product.setPrice(txtPrice.getText());
-					product.setStockQuantity(txtStockQuantity.getText());
-					product.setIsAvailable(txtIsAvailable.getText());
-					if(product.UpdateProduct()) {
-						limpiar();
-						JOptionPane.showMessageDialog(null, "Se actualizo correctamente");
-					} else {
-						JOptionPane.showMessageDialog(null, "ERROR AL ACTUALIZAR");
-					}
-				} catch (Exception e2) {
-					// TODO: handle exception
-					JOptionPane.showMessageDialog(null, "ERROR AL ACTUALIZAR");
-				}
-			}
-		});
-		btnActualizar.setBounds(214, 208, 84, 20);
-		contentPane.add(btnActualizar);
 
 	}
 	public void limpiar() {
